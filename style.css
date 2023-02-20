@@ -15,11 +15,11 @@ figure {
 }
 
 
-p{
+h2{
     position: absolute;
     width: 88px;
     height: auto;
-    left: 10vw;
+    left: 12vw;
     top: 4vw;
     font-weight: 400;
     font-size: 32px;
@@ -32,7 +32,7 @@ p{
     position: absolute;
     width: 400px;
     height: auto;
-    left: 32vw;
+    left: 35vw;
     top: 4vw;
     font-weight: 400;
     font-size: 32px;
@@ -45,7 +45,7 @@ p{
     position: absolute;
     width: 1500px;
     height: auto;
-    left: 25vw;
+    left: 28vw;
     top: 12vw;
 }
 
@@ -73,8 +73,8 @@ p{
 
 .audio-file-block {
     position: absolute;
-    left: 26vw;
-    top: 48vw;
+    left: 29vw;
+    top: 45vw;
 
 
 }
