@@ -1,3 +1,20 @@
+/* These styles are just to make it easier to see the blocks, initially. */
+
+body { padding: 2em; }
+
+a { color: black; }
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+body,
+section,
+ul,
+figure {
+	display: grid;
+	gap: 1em;
+}
+
+
 p{
     position: absolute;
     width: 88px;
@@ -11,30 +28,17 @@ p{
 
 }
 
-p1{
+.channel-title{
     position: absolute;
     width: 400px;
     height: auto;
-    left: 28vw;
+    left: 32vw;
     top: 4vw;
     font-weight: 400;
     font-size: 32px;
     line-height: 42px;
     text-align:left;
 
-}
-
-p2{
-    position: absolute;
-    width: 400px;
-    height: auto;
-    left: 23vw;
-    top: 48vw;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 42px;
-    text-align:center;
-    
 }
 
 .frame {
@@ -45,37 +49,32 @@ p2{
     top: 12vw;
 }
 
-.pattern-1 {
+.image-block {
     position: absolute;
     width: 1000px;
     height: auto;
-    left: 100vw;
+    left: 90vw;
 }
 
-.pattern-2 {
+.link-block {
     position: absolute;
     width: 1000px;
-    height: auto;
-    left: 110vw;
-}
-
-.pattern-3 {
-    position: absolute;
-    width: 1500px;
     height: auto;
     left: 120vw;
 }
 
-.pattern-4 {
+
+.video-file-block {
     position: absolute;
     width: 1700px;
     height: auto;
     left: 150vw;
 }
 
-.pattern-5 {
+.audio-file-block {
     position: absolute;
-    width: 1500px;
-    height: auto;
-    left: 160vw;
+    left: 26vw;
+    top: 48vw;
+
+
 }
