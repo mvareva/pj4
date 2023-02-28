@@ -1,6 +1,12 @@
 /* These styles are just to make it easier to see the blocks, initially. */
 
-body { padding: 2em; }
+body {margin-left: 61vw;
+    background-image: url("Frame 15.svg");
+    background-color: white;
+    background-size: 1900px;
+    background-position: left 6vw;
+    background-repeat: no-repeat;
+}
 
 a { color: black; }
 em { font-style: italic; }
@@ -11,7 +17,10 @@ section,
 ul,
 figure {
 	display: grid;
-	gap: 1em;
+	/* gap: 1em; */
+	grid-template-rows: 1fr;
+	grid-auto-flow: column;
+	/* width: 1000px; */
 }
 
 
@@ -19,8 +28,8 @@ h2{
     position: absolute;
     width: 88px;
     height: auto;
-    left: 12vw;
-    top: 4vw;
+    left: 8vw;
+    top: 2vw;
     font-weight: 400;
     font-size: 32px;
     line-height: 42px;
@@ -32,8 +41,8 @@ h2{
     position: absolute;
     width: 400px;
     height: auto;
-    left: 35vw;
-    top: 4vw;
+    left: 14vw;
+    top: 2vw;
     font-weight: 400;
     font-size: 32px;
     line-height: 42px;
@@ -41,40 +50,27 @@ h2{
 
 }
 
-.frame {
-    position: absolute;
-    width: 1500px;
-    height: auto;
-    left: 28vw;
-    top: 12vw;
-}
+
 
 .image-block {
-    position: absolute;
-    width: 1000px;
-    height: auto;
-    left: 90vw;
+    /* position: absolute; */
+    width: auto;
+    height: 100vh;
 }
 
 .link-block {
-    position: absolute;
-    width: 1000px;
-    height: auto;
-    left: 120vw;
+    width: auto;
+    height: 100vh;
 }
 
 
 .video-file-block {
-    position: absolute;
-    width: 1700px;
-    height: auto;
-    left: 150vw;
+    width: auto;
+    height: 100vh;
 }
 
 .audio-file-block {
-    position: absolute;
-    left: 29vw;
-    top: 45vw;
-
-
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
