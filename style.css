@@ -1,9 +1,16 @@
 /* These styles are just to make it easier to see the blocks, initially. */
+:root { --spacing: 16px; }
 
-body {margin-left: 61vw;
+@media (min-width: 600px) {
+	:root { --spacing: 32px; }
+
+
+
+body {
+    margin-left: 57vw;
     background-image: url("Frame 15.svg");
     background-color: white;
-    background-size: 1900px;
+    background-size: 120vw;
     background-position: left 6vw;
     background-repeat: no-repeat;
 }
@@ -26,9 +33,9 @@ figure {
 
 h2{
     position: absolute;
-    width: 88px;
+    width: 188px;
     height: auto;
-    left: 8vw;
+    left: 82.2vw;
     top: 2vw;
     font-weight: 400;
     font-size: 32px;
@@ -36,41 +43,153 @@ h2{
     text-align:left;
 
 }
-
-.channel-title{
-    position: absolute;
-    width: 400px;
-    height: auto;
-    left: 14vw;
-    top: 2vw;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 42px;
-    text-align:left;
-
-}
-
 
 
 .image-block {
+    /* position: absolute;*/
+    width: auto;
+    height: 100vh;
+    transition: 1s all;
+    display: block;
+    z-index: 100;
+}
+
+
+
+.image-block:hover {
     /* position: absolute; */
     width: auto;
     height: 100vh;
+    transform:translateX(-30vw);
 }
+
 
 .link-block {
     width: auto;
     height: 100vh;
+    transition: 1s all;
+}
+
+.link-block:hover {
+    /* position: absolute; */
+    width: auto;
+    height: 100vh;
+    transform:translateX(-30vw);
 }
 
 
 .video-file-block {
     width: auto;
     height: 100vh;
+    transition: 1s all;
+}
+
+.video-block:hover {
+    /* position: absolute; */
+    width: auto;
+    height: 100vh;
+    transform:translateX(-30vw);
 }
 
 .audio-file-block {
+    padding: 20px;
     margin-left: 10px;
     margin-right: 10px;
 }
+}
 
+
+@media (max-width: 600px) {
+	:root { --spacing: 32px; }
+    
+    body {
+        margin-left: 9vw;
+        background-image: url("Frame\ Mob.svg");
+        background-color: white;
+        background-size: 1600px;
+        background-repeat: no-repeat;
+    }
+    
+    a { color: black; }
+    em { font-style: italic; }
+    strong { font-weight: bold; }
+    
+    body,
+    section,
+    ul,
+    figure {
+        display: grid;
+        /* gap: 1em; */
+        grid-template-rows: 1fr;
+        grid-auto-flow: column;
+        /* width: 1000px; */
+    }
+    
+    
+    h2{
+        position: absolute;
+        width: 188px;
+        height: auto;
+        left: 60vw;
+        top: 2vw;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 42px;
+        text-align:left;
+    
+    }
+    
+    
+    
+    
+    .image-block {
+        /* position: absolute;*/
+        width: auto;
+        height: 100vh;
+        transition: 1s all;
+        display: block;
+        z-index: 100;
+    }
+    
+    
+    
+    .image-block:hover {
+        /* position: absolute; */
+        width: auto;
+        height: 100vh;
+        transform:translateX(-30vw);
+    }
+    
+    
+    .link-block {
+        width: auto;
+        height: 100vh;
+        transition: 1s all;
+    }
+    
+    .link-block:hover {
+        /* position: absolute; */
+        width: auto;
+        height: 100vh;
+        transform:translateX(-30vw);
+    }
+    
+    
+    .video-file-block {
+        width: auto;
+        height: 100vh;
+        transition: 1s all;
+    }
+    
+    .video-block:hover {
+        /* position: absolute; */
+        width: auto;
+        height: 100vh;
+        transform:translateX(-30vw);
+    }
+    
+    .audio-file-block {
+        margin-left: 60px;
+        margin-right: 10px;
+    }
+}    
