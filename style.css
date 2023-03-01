@@ -35,7 +35,7 @@ h2{
     position: absolute;
     width: 188px;
     height: auto;
-    left: 82.2vw;
+    left: 80.8vw;
     top: 2vw;
     font-weight: 400;
     font-size: 32px;
@@ -189,7 +189,7 @@ h2{
     }
     
     .audio-file-block {
-        margin-left: 60px;
+        margin-left: 10px;
         margin-right: 10px;
     }
 }    
